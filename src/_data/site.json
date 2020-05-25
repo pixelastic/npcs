@@ -1,7 +1,7 @@
 {
-  "defaultDescription": "Your website description. You can overwrite it in any pug file",
-  "defaultTitle": "Default page title. You can overwrite it in any pug file",
-  "defaultUrl": "http://www.your-production-url.com/",
-  "defaultAuthor": "Your Name",
-  "defaultTwitter": "yourusername"
+  "defaultDescription": "Search into NPCs",
+  "defaultTitle": "NPCs",
+  "defaultUrl": "https://gamemaster.pixelastic.com/npcs/",
+  "defaultAuthor": "Tim Carry",
+  "defaultTwitter": "pixelastic"
 }
