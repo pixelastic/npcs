@@ -8,6 +8,5 @@ module.exports = async function() {
     .map(item => {
       return path.basename(item, '.jpg');
     })
-    .drop(2)
     .value();
 };
