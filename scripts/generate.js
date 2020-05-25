@@ -4,14 +4,16 @@ const _ = require('golgoth/lib/lodash');
 const sleep = require('firost/lib/sleep');
 
 (async function() {
-  const array = _.times(1, _.identity);
+  const max = 50;
+  const concurrency = 2;
+  const array = _.times(max, _.identity);
   await pMap(
     array,
     async index => {
       // The real portrait is regenerated every second, so we span the queries
-      // await sleep(index * 1500);
+      await sleep(index * 1500);
       await helper.generate();
     },
-    { concurrency: 1 }
+    { concurrency }
   );
 })();
