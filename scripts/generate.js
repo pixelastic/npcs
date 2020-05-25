@@ -4,7 +4,7 @@ const _ = require('golgoth/lib/lodash');
 const sleep = require('firost/lib/sleep');
 
 (async function() {
-  const max = 50;
+  const max = 9;
   const concurrency = 2;
   const array = _.times(max, _.identity);
   await pMap(
