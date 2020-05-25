@@ -1,0 +1,29 @@
+{
+  "devDependencies": {
+    "aberlaas": "1.4.3",
+    "firost": "1.5.0",
+    "form-data": "3.0.0",
+    "golgoth": "1.2.0",
+    "norska": "0.9.11",
+    "rev-hash": "3.0.0",
+    "sharp": "0.25.3"
+  },
+  "files": [],
+  "name": "npcavatar",
+  "private": true,
+  "scripts": {
+    "build": "./scripts/build",
+    "build:prod": "./scripts/build-prod",
+    "ci": "./scripts/ci",
+    "cms": "./scripts/cms",
+    "generate": "node ./scripts/generate.js",
+    "husky:precommit": "./scripts/husky-precommit",
+    "lint": "./scripts/lint",
+    "lint:fix": "./scripts/lint-fix",
+    "release": "./scripts/release",
+    "serve": "./scripts/serve",
+    "test": "./scripts/test",
+    "test:watch": "./scripts/test-watch"
+  },
+  "version": "0.0.1"
+}
