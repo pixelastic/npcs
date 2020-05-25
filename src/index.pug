@@ -8,8 +8,9 @@ block config
 block content
   .flrw
     for id in data.avatars
-      .fln.w-25p
-        +img(src="assets/portraits/${id}.jpg");
-
-    
-  p This is your website
+      - const portraitUrl = `./assets/portrait/${id}.jpg`;
+      - const realUrl = `./assets/real/${id}.jpg`;
+      a.fln.w-50p.sm_w-33p.md_w-25p.lg_w-20p.xl_w-10p.relative(href=portraitUrl)
+        +img.z-2.relative.hover_opacity-0.transition-opacity.delay-300.duration-1000(src=portraitUrl)
+        +img.z-1.absolute.inset-0(src=realUrl)
+        //- img.z-1(src=`./assets/real/${id}.jpg`)
