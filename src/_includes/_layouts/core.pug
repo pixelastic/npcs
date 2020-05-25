@@ -26,7 +26,7 @@ html(lang='en')
     script!=tweaks.ensureUrlTrailingSlashSource
     link(rel="shortcut icon", href=`${url.pathToRoot}/favicon.png`)
     link(type="text/css", rel="stylesheet", href=revv(`${url.pathToRoot}style.css`))
-    body.arial
+    body.arial.bg-orange-9
       include /_includes/header
       .mt-8
         block content
