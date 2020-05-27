@@ -2,3 +2,5 @@
 set -e
 
 NODE_ENV=production norska build "$@"
+
+yarn run lambda:build:prod

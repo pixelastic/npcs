@@ -5,6 +5,7 @@
 Thumbs.db
 build/
 dist/
+dist-lambda/
 node_modules/
 npm-debug.log
 tmp/

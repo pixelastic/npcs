@@ -1,4 +1,6 @@
 #!/usr/bin/env sh
 set -e
 
-norska serve "$@"
+netlify dev
+
+# norska serve "$@"

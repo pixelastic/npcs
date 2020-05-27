@@ -2,6 +2,30 @@
 [build]
   command = "yarn run build:prod"
   publish = "./dist/"
+  functions = "./dist-lambda/"
+
+[dev]
+  command = "yarn run norska serve --no-open"
+  framework = "#custom"
+  targetPort = 8083
+  publish = "./dist/"
+  functions = "./lambda/"
+  port = 9000
+  autoLaunch = true
+
+
+# API redirects
+[[redirects]]
+  from = "/api/portraitify"
+  to = "/.netlify/functions/portraitify"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/submit"
+  to = "/.netlify/functions/submit"
+  status = 200
+  force = true
 
 # Terry Pratchett homage
 [[headers]]

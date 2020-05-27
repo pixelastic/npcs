@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+set -e
+
+# A custom webpack config should be passed to improve reload perf and hide some
+# warnings
+netlify-lambda serve ./lambda --config ./webpack.lambda.config.js

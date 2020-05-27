@@ -30,6 +30,9 @@ html(lang='en')
       include /_includes/header
       .mt-8
         block content
+
+      - config = data.config
+      script!=`window.CONFIG = ${JSON.stringify(config)}`
       each jsFile in runtime.jsFiles
         script(src=`${url.pathToRoot}${jsFile}`)
 

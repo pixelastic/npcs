@@ -1,5 +1,12 @@
+const ky = require('ky').default;
 module.exports = {
-  data: {},
+  data: {
+    source: null,
+  },
+  apiUrl(folder) {
+    const baseApiUrl = window.CONFIG.apiUrl;
+    return `${baseApiUrl}${folder}`;
+  },
   isEnabled() {
     return this.byId('addPage');
   },
@@ -11,6 +18,9 @@ module.exports = {
   },
   getPicturePreview() {
     return this.byId('picturePreview');
+  },
+  getPortraitPreview() {
+    return this.byId('portraitPreview');
   },
   async getFileAs(file, as) {
     const reader = new FileReader();
@@ -27,24 +37,38 @@ module.exports = {
       'change',
       async () => {
         const selectedFile = pictureUpload.files[0];
-        const fileAsDataURL = await this.getFileAs(selectedFile, 'DataURL');
-        const fileAsText = await this.getFileAs(selectedFile, 'Text');
+        const base64 = await this.getFileAs(selectedFile, 'DataURL');
 
         // Update the preview
         const picturePreview = this.getPicturePreview();
-        picturePreview.src = fileAsDataURL;
+        picturePreview.src = base64;
 
         // Save the file
-        this.data.real = fileAsText;
+        this.data.source = base64;
 
         // Ask the API for portrait
-        this.handlePortraitGeneration(fileAsText);
+        this.handlePortraitGeneration(base64);
       },
       false
     );
   },
-  handlePortraitGeneration(file) {
-    console.info(file);
+  async handlePortraitGeneration(base64) {
+    const apiUrl = this.apiUrl('portraitify');
+    const data = {
+      source: base64,
+    };
+    const response = await ky.post(apiUrl, { json: data }).json();
+
+    const portraitPreview = this.getPortraitPreview();
+    portraitPreview.src = response.dataURL;
+
+    // TODO:
+    // Catch errors when something break in the lambda, ask to try with
+    // another image
+    // Once one is displayed, start loading the others with /alternatives
+    // Once one is selected, allow for submitting
+    // Clear all previews when selecting a new file
+    // Submit the real and portrait to the function
   },
   init() {
     this.handleInputSelection();
