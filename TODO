@@ -1,0 +1,17 @@
+Add a "Add my own portrait" button on the website
+Opens a form as a netlify function, where one can upload its own picture
+Creates a PR on the repo with the "real" picture added
+This might need to resize and compress the file
+A hook
+
+
+/api/portraitify
+  take an image as text, return the portrait as text as well as the id
+  if take an id, return a portrait as text
+
+/api/submit
+  take a real as text and a portrait as text
+  also ask for github username
+  create a PR with both files where the name is the github handle
+  put the username as co-reviewer and ping it
+

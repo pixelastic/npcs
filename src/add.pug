@@ -1,0 +1,30 @@
+extends /_includes/_layouts/core
+
+block config
+  - pageTitle = "Add your own face"
+  //- - pageDescription = "Custom description"
+  //- see also: pageAuthor, pageImage, pageTwitter, pageUrl
+
+block content
+  .container.mx-auto.pt-3#addPage
+    .bg-gray-2.rounded.shadow.p-2
+      .text-8 Add your face
+      .lh-6
+        p So you want to add your face to the collection? Great!
+        p The code is hosted on GitHub and deployed on each commit, so all you need to do is to submit a Pull Request.
+        p Or, use the form below that will do just that automatically
+
+      .form
+        //- When file selected, display it immediatly
+        //- Add 6 portraits placeholder with a spinner
+        //- Submit the image to the API in the background
+        //- When received display the first image
+        //- Resend 5 other queries in parallel for the other variations
+        //- Allow user to select from the 6 and clear the submit
+        //- On submit, wait in the background for the PR creation
+        //- Once done, replace the form with a link to the PR
+        .js-upload
+          input(type="file" id="pictureUpload" name="pictureUpload")
+        .js-preview
+          img.h-10.w-10(id="picturePreview")
+        button Submit
