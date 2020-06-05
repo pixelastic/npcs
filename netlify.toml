@@ -16,14 +16,8 @@
 
 # API redirects
 [[redirects]]
-  from = "/api/portraitify"
-  to = "/.netlify/functions/portraitify"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/api/submit"
-  to = "/.netlify/functions/submit"
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
   status = 200
   force = true
 

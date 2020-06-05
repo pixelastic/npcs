@@ -7,6 +7,8 @@ block config
 
 block content
   .container.mx-auto.pt-3#addPage
+    //- We need an img and canvas tags offscreen to properly resize the image
+    //- before submitting it to the API
     .invisible.absolute.-left-100p
       img(id="tmpImage")
       canvas(id="tmpCanvas")
@@ -26,23 +28,21 @@ block content
             label.bg-orange-7.white.rounded-2.shadow.px-1.py-01.text-5.hover_bg-orange-6.pointer(for="pictureUpload") Pick a file
 
           .__previewDisplay.flrnw.fln
+            p Pick one of the following generated images:
             .fln
               .border-double.border-gray.border-01.relative
                 img.h-11.w-11.z-1.relative(id="picturePreview")
                 .absolute.top-0.left-0.z-0.h-11.w-11.flrnw.flc.bg-gray
                   .spinner
 
-            .fln.ml-3
-              .border-double.border-yellow-8.border-01.relative
-                img.h-11.w-11.z-1.relative(id="portraitPreview1")
-                .absolute.top-0.left-0.z-0.h-11.w-11.flrnw.flc.bg-yellow-8
-                  .spinner
-
-            .fln.ml-1
-              .border-double.border-yellow-8.border-01.relative
-                img.h-11.w-11.z-1.relative(id="portraitPreview2")
-                .absolute.top-0.left-0.z-0.h-11.w-11.flrnw.flc.bg-yellow-8
-                  .spinner
+            - let n = 0;
+            while n < 4
+              - n++
+              .fln.ml-3
+                .border-double.border-yellow-8.border-01.relative
+                  img.h-11.w-11.z-1.relative(id=`portraitPreview${n}`)
+                  .absolute.top-0.left-0.z-0.h-11.w-11.flrnw.flc.bg-yellow-8
+                    .spinner
 
         .__addUsername.fln.flrnw.py-1.text-3
           .fln.w-12.flrnw.flrar
