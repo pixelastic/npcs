@@ -7,25 +7,49 @@ block config
 
 block content
   .container.mx-auto.pt-3#addPage
+    .invisible.absolute.-left-100p
+      img(id="tmpImage")
+      canvas(id="tmpCanvas")
+
     .bg-gray-2.rounded.shadow.p-2
       .text-8 Add your face
       .lh-6
-        p So you want to add your face to the collection? Great!
-        p The code is hosted on GitHub and deployed on each commit, so all you need to do is to submit a Pull Request.
-        p Or, use the form below that will do just that automatically
+        p 
+          | Fill the form below to add your own face to the collection.
+          | It will create a #[a.blue.hover_underline(href="https://github.com/pixelastic/npcs/pulls") Pull Request] on the repo.
 
-      .form
-        //- When file selected, display it immediatly
-        //- Add 6 portraits placeholder with a spinner
-        //- Submit the image to the API in the background
-        //- When received display the first image
-        //- Resend 5 other queries in parallel for the other variations
-        //- Allow user to select from the 6 and clear the submit
-        //- On submit, wait in the background for the PR creation
-        //- Once done, replace the form with a link to the PR
-        .js-upload
-          input(type="file" id="pictureUpload" name="pictureUpload")
-        .js-preview
-          img.h-10.w-10(id="picturePreview")
-          img.h-10.w-10(id="portraitPreview")
-        button Submit
+
+      #addForm.flcnw(data-step="initial")
+        .fln.flrnw.py-1.text-3
+          .__previewPicker.fln.flrnw.flc
+            input.hidden(type="file" id="pictureUpload" name="pictureUpload")
+            label.bg-orange-7.white.rounded-2.shadow.px-1.py-01.text-5.hover_bg-orange-6.pointer(for="pictureUpload") Pick a file
+
+          .__previewDisplay.flrnw.fln
+            .fln
+              .border-double.border-gray.border-01.relative
+                img.h-11.w-11.z-1.relative(id="picturePreview")
+                .absolute.top-0.left-0.z-0.h-11.w-11.flrnw.flc.bg-gray
+                  .spinner
+
+            .fln.ml-3
+              .border-double.border-yellow-8.border-01.relative
+                img.h-11.w-11.z-1.relative(id="portraitPreview1")
+                .absolute.top-0.left-0.z-0.h-11.w-11.flrnw.flc.bg-yellow-8
+                  .spinner
+
+            .fln.ml-1
+              .border-double.border-yellow-8.border-01.relative
+                img.h-11.w-11.z-1.relative(id="portraitPreview2")
+                .absolute.top-0.left-0.z-0.h-11.w-11.flrnw.flc.bg-yellow-8
+                  .spinner
+
+        .__addUsername.fln.flrnw.py-1.text-3
+          .fln.w-12.flrnw.flrar
+            label.flrnw.flrcv GitHub username:
+          .fln.pl-2
+            input.h-6.border-001.border-gray.rounded.px-01.shadow-inset
+
+
+        .__addSubmit.fln.ml-12.pl-2
+            button.bg-blue.white.rounded-2.shadow.border-blue-5.border-001.px-1.py-01.text-5.hover_bg-blue-5.pointer Submit

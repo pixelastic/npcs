@@ -1,16 +1,20 @@
 {
   "devDependencies": {
+    "@octokit/core": "2.5.3",
     "aberlaas": "1.4.3",
     "callirhoe": "0.1.0",
+    "cat-names": "3.0.0",
     "data-urls": "2.0.0",
     "firost": "1.5.0",
     "form-data": "3.0.0",
     "golgoth": "1.2.0",
     "netlify-cli": "2.52.0",
     "netlify-lambda": "1.6.3",
-    "norska": "0.9.11",
+    "norska": "0.9.16",
+    "octokit-create-pull-request": "1.5.0",
     "rev-hash": "3.0.0",
-    "sharp": "0.25.3"
+    "sharp": "0.25.3",
+    "superb": "4.0.0"
   },
   "files": [],
   "name": "npcavatar",
@@ -31,7 +35,8 @@
     "release": "./scripts/release",
     "serve": "./scripts/serve",
     "test": "./scripts/test",
-    "test:watch": "./scripts/test-watch"
+    "test:watch": "./scripts/test-watch",
+    "create-pr": "node ./scripts/create-pr.js"
   },
   "version": "0.0.1",
   "dependencies": {

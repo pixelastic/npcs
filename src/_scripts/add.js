@@ -19,8 +19,8 @@ module.exports = {
   getPicturePreview() {
     return this.byId('picturePreview');
   },
-  getPortraitPreview() {
-    return this.byId('portraitPreview');
+  getPortraitPreview(index) {
+    return this.byId(`portraitPreview${index}`);
   },
   async getFileAs(file, as) {
     const reader = new FileReader();
@@ -31,23 +31,66 @@ module.exports = {
       };
     });
   },
+  setStep(stepName) {
+    this.byId('addForm').setAttribute('data-step', stepName);
+  },
+  async displayPreview(file) {
+    const dataURL = await this.getFileAs(file, 'DataURL');
+    const picturePreview = this.getPicturePreview();
+    return new Promise(resolve => {
+      picturePreview.onload = resolve;
+      picturePreview.src = dataURL;
+    });
+  },
+  async getSourceDataURL(file) {
+    const dataURL = await this.getFileAs(file, 'DataURL');
+
+    const tmpImage = this.byId('tmpImage');
+    const tmpCanvas = this.byId('tmpCanvas');
+    const finalDimension = 512;
+
+    return new Promise(resolve => {
+      tmpImage.onload = () => {
+        const imageWidth = tmpImage.offsetWidth;
+        const imageHeight = tmpImage.offsetHeight;
+        tmpCanvas.width = finalDimension;
+        tmpCanvas.height = finalDimension;
+        tmpCanvas
+          .getContext('2d')
+          .drawImage(
+            tmpImage,
+            0,
+            0,
+            imageWidth,
+            imageHeight,
+            0,
+            0,
+            finalDimension,
+            finalDimension
+          );
+        const canvasDataURL = tmpCanvas.toDataURL('image/png');
+
+        resolve(canvasDataURL);
+      };
+      tmpImage.src = dataURL;
+    });
+  },
   handleInputSelection() {
     const pictureUpload = this.getPictureUpload();
     pictureUpload.addEventListener(
       'change',
       async () => {
-        const selectedFile = pictureUpload.files[0];
-        const base64 = await this.getFileAs(selectedFile, 'DataURL');
+        this.setStep('sourceSelected');
 
-        // Update the preview
-        const picturePreview = this.getPicturePreview();
-        picturePreview.src = base64;
+        const selectedFile = pictureUpload.files[0];
+        await this.displayPreview(selectedFile);
+        const sourceDataURL = await this.getSourceDataURL(selectedFile);
 
         // Save the file
-        this.data.source = base64;
+        this.data.source = sourceDataURL;
 
         // Ask the API for portrait
-        this.handlePortraitGeneration(base64);
+        this.handlePortraitGeneration(sourceDataURL);
       },
       false
     );
@@ -59,7 +102,7 @@ module.exports = {
     };
     const response = await ky.post(apiUrl, { json: data }).json();
 
-    const portraitPreview = this.getPortraitPreview();
+    const portraitPreview = this.getPortraitPreview(1);
     portraitPreview.src = response.dataURL;
 
     // TODO:
