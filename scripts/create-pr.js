@@ -9,7 +9,7 @@ const octokit = new MyOctokit({
   auth: process.env.GITHUB_TOKEN,
 });
 
-(async function() {
+(async function () {
   const realAsBase64 = fs.readFileSync('./tmp/real.png', {
     encoding: 'base64',
   });

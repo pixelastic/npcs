@@ -1,7 +1,7 @@
 {
   "devDependencies": {
     "@octokit/core": "2.5.3",
-    "aberlaas": "1.4.3",
+    "aberlaas": "1.9.1",
     "callirhoe": "0.1.0",
     "cat-names": "3.0.0",
     "data-urls": "2.0.0",

@@ -70,7 +70,7 @@ module.exports = {
    * @returns {object} The image HTML tag
    **/
   async loadImage(image, src) {
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       image.onload = () => {
         resolve(image);
       };
@@ -87,7 +87,7 @@ module.exports = {
     const tmpImage = this.byId('tmpImage');
     const tmpCanvas = this.byId('tmpCanvas');
 
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       tmpImage.onload = () => {
         tmpCanvas.width = newDimension;
         tmpCanvas.height = newDimension;
@@ -118,9 +118,9 @@ module.exports = {
    **/
   async getSelectedFileDataURL(selectedFile) {
     const reader = new FileReader();
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       reader.readAsDataURL(selectedFile);
-      reader.onload = function() {
+      reader.onload = function () {
         resolve(this.result);
       };
     });
@@ -157,7 +157,7 @@ module.exports = {
     const variantData = {
       portraitId,
     };
-    await pMap([2, 3, 4], async index => {
+    await pMap([2, 3, 4], async (index) => {
       const variantResponse = await ky
         .post(variantUrl, { json: variantData })
         .json();
