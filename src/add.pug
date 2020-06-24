@@ -20,36 +20,38 @@ block content
           | Fill the form below to add your own face to the collection.
           | It will create a #[a.blue.hover_underline(href="https://github.com/pixelastic/npcs/pulls") Pull Request] on the repo.
 
-
-      #addForm.flcnw(data-step="initial")
-        .fln.flrnw.py-1.text-3
-          .__previewPicker.fln.flrnw.flc
-            input.hidden(type="file" id="pictureUpload" name="pictureUpload")
-            label.bg-orange-7.white.rounded-2.shadow.px-1.py-01.text-5.hover_bg-orange-6.pointer(for="pictureUpload") Pick a file
-
-          .__previewDisplay.flrnw.fln
-            p Pick one of the following generated images:
-            .fln
-              .border-double.border-gray.border-01.relative
-                img.h-11.w-11.z-1.relative(id="picturePreview")
-                .absolute.top-0.left-0.z-0.h-11.w-11.flrnw.flc.bg-gray
-                  .spinner
-
+      form.mt-3(id="addForm")
+        .flrnw
+          .fln.w-33p.flcnw.flc.relative
+            .border-gray.border-01.relative.z-0.bg-gray-4.rounded
+              img.h-11.w-11.z-1.relative(id="picturePreview")
+            .__previewPicker.absolute.z-1.top-0.right-0.bottom-0.left-0.flrnw.flc
+              label.bg-orange-7.white.rounded-2.shadow.px-1.py-01.text-5.hover_bg-orange-6.pointer(for="pictureUpload") Pick a file to start
+              input.hidden(type="file" id="pictureUpload" name="pictureUpload")
+          .fla.flrw
             - let n = 0;
-            while n < 4
+            while n < 6
               - n++
-              .fln.ml-3
-                .border-double.border-yellow-8.border-01.relative
-                  img.h-11.w-11.z-1.relative(id=`portraitPreview${n}`)
-                  .absolute.top-0.left-0.z-0.h-11.w-11.flrnw.flc.bg-yellow-8
-                    .spinner
-
-        .__addUsername.fln.flrnw.py-1.text-3
-          .fln.w-12.flrnw.flrar
-            label.flrnw.flrcv GitHub username:
-          .fln.pl-2
-            input.h-6.border-001.border-gray.rounded.px-01.shadow-inset
+              .fln.w-33p.flrnw.flc.p-1
+                label.border-001.border-gray.rounded.shadow
+                  input.switch(type="radio" name="portraitRadio" value=n checked=(n==1))
+                  .bg-white.switch_bg-green.p-1.relative
+                    img.h-11.w-11.z-1.relative(id=`portraitPreview${n}`)
+                    //- .absolute.top-0.left-0.z-0.h-11.w-11.flrnw.flc.bg-yellow-6
+                    //-   .spinner
 
 
-        .__addSubmit.fln.ml-12.pl-2
-            button.bg-blue.white.rounded-2.shadow.border-blue-5.border-001.px-1.py-01.text-5.hover_bg-blue-5.pointer Submit
+        //- #addForm(data-step="initial")
+        //- .fln.flrnw.py-1.text-3
+        //-   .__previewDisplay.flrnw.fln
+        //-     p Pick one of the following generated images:
+
+        //- .__addUsername.fln.flrnw.py-1.text-3
+        //-   .fln.w-12.flrnw.flrar
+        //-     label.flrnw.flrcv GitHub username:
+        //-   .fln.pl-2
+        //-     input.h-6.border-001.border-gray.rounded.px-01.shadow-inset
+
+
+        //- .__addSubmit.fln.ml-12.pl-2
+        //-     button.bg-blue.white.rounded-2.shadow.border-blue-5.border-001.px-1.py-01.text-5.hover_bg-blue-5.pointer Submit

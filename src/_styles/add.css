@@ -23,32 +23,32 @@
   }
 }
 
-#addForm[data-step='initial'] {
-  .__previewPicker {
-    @apply flex;
-  }
-  .__previewDisplay {
-    @apply hidden;
-  }
-  .__addUsername {
-    @apply hidden;
-  }
-  .__addSubmit {
-    @apply hidden;
-  }
-}
+/* #addForm[data-step='initial'] { */
+/*   .__previewPicker { */
+/*     @apply flex; */
+/*   } */
+/*   .__previewDisplay { */
+/*     @apply hidden; */
+/*   } */
+/*   .__addUsername { */
+/*     @apply hidden; */
+/*   } */
+/*   .__addSubmit { */
+/*     @apply hidden; */
+/*   } */
+/* } */
 
 #addForm[data-step='sourceSelected'] {
   .__previewPicker {
     @apply hidden;
   }
-  .__previewDisplay {
-    @apply flex;
-  }
-  .__addUsername {
-    @apply hidden;
-  }
-  .__addSubmit {
-    @apply hidden;
-  }
+  /* .__previewDisplay { */
+  /*   @apply flex; */
+  /* } */
+  /* .__addUsername { */
+  /*   @apply hidden; */
+  /* } */
+  /* .__addSubmit { */
+  /*   @apply hidden; */
+  /* } */
 }

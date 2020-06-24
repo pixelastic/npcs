@@ -34,7 +34,7 @@ module.exports = {
         this.data.source = sourceDataURL;
 
         // Ask the API for portrait
-        this.generatePortraits(sourceDataURL);
+        // this.generatePortraits(sourceDataURL);
       },
       false
     );
@@ -164,6 +164,5 @@ module.exports = {
       const portraitPreview = this.byId(`portraitPreview${index}`);
       portraitPreview.src = variantResponse.dataURL;
     });
-    console.info('All portraits downloaded');
   },
 };
