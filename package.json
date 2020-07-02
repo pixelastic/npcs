@@ -5,7 +5,7 @@
     "p-map": "4.0.0"
   },
   "devDependencies": {
-    "@octokit/core": "2.5.3",
+    "@octokit/core": "2.5.4",
     "aberlaas": "1.10.1",
     "callirhoe": "0.1.0",
     "cat-names": "3.0.0",
@@ -13,10 +13,10 @@
     "firost": "1.5.0",
     "form-data": "3.0.0",
     "golgoth": "1.2.0",
-    "netlify-cli": "2.52.0",
+    "netlify-cli": "2.57.0",
     "octokit-create-pull-request": "1.5.0",
     "rev-hash": "3.0.0",
-    "sharp": "0.25.3"
+    "sharp": "0.25.4"
   },
   "files": [],
   "name": "npcavatar",
