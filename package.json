@@ -5,7 +5,7 @@
     "p-map": "4.0.0"
   },
   "devDependencies": {
-    "@octokit/core": "2.5.3",
+    "@octokit/core": "3.1.0",
     "aberlaas": "1.10.1",
     "callirhoe": "0.1.0",
     "cat-names": "3.0.0",
