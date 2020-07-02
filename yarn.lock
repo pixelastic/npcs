@@ -695,55 +695,6 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@netlify/build@^2.0.2":
-  version "2.0.23"
-  resolved "https://registry.npmjs.org/@netlify/build/-/build-2.0.23.tgz#acd4a1dd667b74535f44e90e81afc06db0e5b21e"
-  integrity sha512-LT5j+B/+k6c4iVkKAg+O+YQEkI597IcuJi6i9fBxBAijd0QzzmdtDKPHuuFILcxKpZui99sVYU2vkoTvmdrvnA==
-  dependencies:
-    "@bugsnag/js" "^7.0.0"
-    "@netlify/cache-utils" "^1.0.0"
-    "@netlify/config" "^2.0.2"
-    "@netlify/functions-utils" "^1.2.0"
-    "@netlify/git-utils" "^1.0.0"
-    "@netlify/run-utils" "^0.1.1"
-    "@netlify/zip-it-and-ship-it" "^1.3.2"
-    analytics "0.3.1"
-    array-flat-polyfill "^1.0.1"
-    chalk "^3.0.0"
-    clean-stack "^2.2.0"
-    execa "^3.3.0"
-    figures "^3.2.0"
-    filter-obj "^2.0.1"
-    global-cache-dir "^1.0.1"
-    got "^9.6.0"
-    indent-string "^4.0.0"
-    is-ci "^2.0.0"
-    is-plain-obj "^2.1.0"
-    js-yaml "^3.13.1"
-    locate-path "^5.0.0"
-    log-process-errors "^5.1.2"
-    make-dir "^3.0.2"
-    map-obj "^4.1.0"
-    memoize-one "^5.1.1"
-    os-name "^3.1.0"
-    p-event "^4.1.0"
-    p-reduce "^2.1.0"
-    path-exists "^4.0.0"
-    path-type "^4.0.0"
-    pkg-dir "^4.2.0"
-    pretty-ms "^6.0.1"
-    read-pkg-up "^7.0.1"
-    readdirp "^3.4.0"
-    resolve "^2.0.0-next.1"
-    safe-json-stringify "^1.2.0"
-    semver "^7.1.3"
-    string-width "^4.2.0"
-    strip-ansi "^6.0.0"
-    supports-color "^7.1.0"
-    update-notifier "^4.1.0"
-    uuid "^7.0.2"
-    yargs "^15.3.1"
-
 "@netlify/build@^2.0.26":
   version "2.0.26"
   resolved "https://registry.yarnpkg.com/@netlify/build/-/build-2.0.26.tgz#a0349ddb5b1c5861003c53c9ce451aef24ef5a64"
@@ -831,56 +782,6 @@
     tomlify-j0.4 "^3.0.0"
     yargs "^15.3.0"
 
-"@netlify/config@^1.1.2":
-  version "1.2.5"
-  resolved "https://registry.npmjs.org/@netlify/config/-/config-1.2.5.tgz#2c339562ed309a7363d566afa38e47ce289080e9"
-  integrity sha512-TqyVIA/BYWHSVgnpJ7keo2Dg6JZ9AGZWBAVk657yVvGOIEoH0vywJJjtqj3M2i6pHVryQAGU/Pugz+L9MGqx4w==
-  dependencies:
-    array-flat-polyfill "^1.0.1"
-    chalk "^3.0.0"
-    deepmerge "^4.2.2"
-    execa "^3.4.0"
-    fast-safe-stringify "^2.0.7"
-    figures "^3.2.0"
-    filter-obj "^2.0.1"
-    find-up "^4.1.0"
-    indent-string "^4.0.0"
-    is-plain-obj "^2.1.0"
-    js-yaml "^3.14.0"
-    netlify "^4.3.3"
-    p-locate "^4.1.0"
-    path-exists "^4.0.0"
-    path-type "^4.0.0"
-    toml "^3.0.0"
-    tomlify-j0.4 "^3.0.0"
-    validate-npm-package-name "^3.0.0"
-    yargs "^15.3.0"
-
-"@netlify/config@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.npmjs.org/@netlify/config/-/config-2.0.2.tgz#3376ef0ca11e33021b4dd910745e8928c353476a"
-  integrity sha512-rQitoxGCp5O2UwhjnebSxEeV+9JtdAviaJ2WqVz/amQkeZ4d+ImcEAcSYDVj/rTagMq+5LpQbn9hIhoW+UL8Eg==
-  dependencies:
-    array-flat-polyfill "^1.0.1"
-    chalk "^3.0.0"
-    deepmerge "^4.2.2"
-    execa "^3.4.0"
-    fast-safe-stringify "^2.0.7"
-    figures "^3.2.0"
-    filter-obj "^2.0.1"
-    find-up "^4.1.0"
-    indent-string "^4.0.0"
-    is-plain-obj "^2.1.0"
-    js-yaml "^3.14.0"
-    netlify "^4.3.4"
-    p-locate "^4.1.0"
-    path-exists "^4.0.0"
-    path-type "^4.0.0"
-    toml "^3.0.0"
-    tomlify-j0.4 "^3.0.0"
-    validate-npm-package-name "^3.0.0"
-    yargs "^15.3.0"
-
 "@netlify/config@^2.0.3":
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@netlify/config/-/config-2.0.3.tgz#cbd4cbf8910585386c245da03bb39cb18e2cf348"
@@ -961,7 +862,7 @@
     util.promisify "^1.0.1"
     yargs "^15.3.1"
 
-"@netlify/zip-it-and-ship-it@^1.2.0", "@netlify/zip-it-and-ship-it@^1.3.1", "@netlify/zip-it-and-ship-it@^1.3.2":
+"@netlify/zip-it-and-ship-it@^1.3.1", "@netlify/zip-it-and-ship-it@^1.3.2":
   version "1.3.2"
   resolved "https://registry.npmjs.org/@netlify/zip-it-and-ship-it/-/zip-it-and-ship-it-1.3.2.tgz#d45ef0de6c3badad2cc2d5d8d29ab42be6a16356"
   integrity sha512-CT/IyXHqFpf4KhegGZUIl9EzIBEVjDL2R8XP2mtKcklo1ob1VASSCf1gr2+Xn8oAz2zpcWUqIdmprjnvdXc/gA==
@@ -1153,7 +1054,7 @@
 
 "@octokit/core@3.1.0", "@octokit/core@^3.0.0":
   version "3.1.0"
-  resolved "https://registry.npmjs.org/@octokit/core/-/core-3.1.0.tgz#9c3c9b23f7504668cfa057f143ccbf0c645a0ac9"
+  resolved "https://registry.yarnpkg.com/@octokit/core/-/core-3.1.0.tgz#9c3c9b23f7504668cfa057f143ccbf0c645a0ac9"
   integrity sha512-yPyQSmxIXLieEIRikk2w8AEtWkFdfG/LXcw1KvEtK3iP0ENZLW/WYQmdzOKqfSaLhooz4CJ9D+WY79C8ZliACw==
   dependencies:
     "@octokit/auth-token" "^2.4.0"
@@ -2968,11 +2869,6 @@ callirhoe@0.1.0:
     golgoth "1.1.1"
     sparkpost "2.1.4"
 
-callsite@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/callsite/-/callsite-1.0.0.tgz#280398e5d664bd74038b6f0905153e6e8af1bc20"
-  integrity sha1-KAOY5dZkvXQDi28JBRU+borxvCA=
-
 callsites@3.1.0, callsites@^3.0.0, callsites@^3.1.0:
   version "3.1.0"
   resolved "https://registry.npmjs.org/callsites/-/callsites-3.1.0.tgz#b3630abd8943432f54b3f0519238e33cd7df2f73"
@@ -4068,11 +3964,6 @@ dayjs@1.8.20:
   resolved "https://registry.npmjs.org/dayjs/-/dayjs-1.8.20.tgz#724a5cb6ad1f6fc066b0bd9a800dedcc7886f19e"
   integrity sha512-mH0MCDxw6UCGJYxVN78h8ugWycZAO8thkj3bW6vApL5tS0hQplIDdAQcmbvl7n35H0AKdCJQaArTrIQw2xt4Qg==
 
-dayjs@1.8.23:
-  version "1.8.23"
-  resolved "https://registry.npmjs.org/dayjs/-/dayjs-1.8.23.tgz#07b5a8e759c4d75ae07bdd0ad6977f851c01e510"
-  integrity sha512-NmYHMFONftoZbeOhVz6jfiXI4zSiPN6NoVWJgC0aZQfYVwzy/ZpESPHuCcI0B8BUMpSJQ08zenHDbofOLKq8hQ==
-
 dayjs@1.8.28:
   version "1.8.28"
   resolved "https://registry.npmjs.org/dayjs/-/dayjs-1.8.28.tgz#37aa6201df483d089645cb6c8f6cef6f0c4dbc07"
@@ -5039,11 +4930,6 @@ eventemitter2@6.0.0:
   resolved "https://registry.npmjs.org/eventemitter2/-/eventemitter2-6.0.0.tgz#218eb512c3603c5341724b6af7b686a1aa5ab8f5"
   integrity sha512-ZuNWHD7S7IoikyEmx35vPU8H1W0L+oi644+4mSTg7nwXvBQpIwQL7DPjYUF0VMB0jPkNMo3MqD07E7MYrkFmjQ==
 
-eventemitter2@6.2.1:
-  version "6.2.1"
-  resolved "https://registry.npmjs.org/eventemitter2/-/eventemitter2-6.2.1.tgz#cec423117a8ce45c471092d0bb01a0aff1ed5e47"
-  integrity sha512-38fV8WMnn95y1ugsY8Iu25hhFTHYSqR+JkDVNSuKmi5/sF79Zt+EpA0N6yCGv/PSCZhIRZlyaIBY3q8ed7ZikA==
-
 eventemitter2@6.4.3:
   version "6.4.3"
   resolved "https://registry.npmjs.org/eventemitter2/-/eventemitter2-6.4.3.tgz#35c563619b13f3681e7eb05cbdaf50f56ba58820"
@@ -5553,6 +5439,14 @@ find-cache-dir@^2.1.0:
     make-dir "^2.0.0"
     pkg-dir "^3.0.0"
 
+find-up@4.1.0, find-up@^4.0.0, find-up@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.npmjs.org/find-up/-/find-up-4.1.0.tgz#97afe7d6cdc0bc5928584b7c8d7b16e8a9aa5d19"
+  integrity sha512-PpOwAdQ/YlXQ2vj8a3h8IipDuYRi3wceVQQGYWxNINccq40Anw7BlsEXCMbt1Zt+OLA6Fq9suIpIWD0OsnISlw==
+  dependencies:
+    locate-path "^5.0.0"
+    path-exists "^4.0.0"
+
 find-up@^2.0.0, find-up@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/find-up/-/find-up-2.1.0.tgz#45d1b7e506c717ddd482775a2b77920a3c0c57a7"
@@ -5567,20 +5461,38 @@ find-up@^3.0.0:
   dependencies:
     locate-path "^3.0.0"
 
-find-up@^4.0.0, find-up@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.npmjs.org/find-up/-/find-up-4.1.0.tgz#97afe7d6cdc0bc5928584b7c8d7b16e8a9aa5d19"
-  integrity sha512-PpOwAdQ/YlXQ2vj8a3h8IipDuYRi3wceVQQGYWxNINccq40Anw7BlsEXCMbt1Zt+OLA6Fq9suIpIWD0OsnISlw==
-  dependencies:
-    locate-path "^5.0.0"
-    path-exists "^4.0.0"
-
 find-versions@^3.2.0:
   version "3.2.0"
   resolved "https://registry.npmjs.org/find-versions/-/find-versions-3.2.0.tgz#10297f98030a786829681690545ef659ed1d254e"
   integrity sha512-P8WRou2S+oe222TOCHitLy8zj+SIsVJh52VP4lvXkaFVnOFFdoWv1H1Jjvel1aI6NCFOAaeAVm8qrI0odiLcww==
   dependencies:
     semver-regex "^2.0.0"
+
+firost@1.10.1:
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/firost/-/firost-1.10.1.tgz#92172d3ddc470d0963388795921ffaeed45091fc"
+  integrity sha512-9A941MbFSpe7nqbjcOGV/kuoEk4Ve6is2T3mEC+nnRcFhOtUKfnsIldOKP4sCOUTBYJQm5ua37/9hy6Dge8rRA==
+  dependencies:
+    callsites "3.1.0"
+    chokidar "3.4.0"
+    clear-module "4.1.1"
+    eventemitter2 "6.4.3"
+    execa "4.0.2"
+    find-up "4.1.0"
+    fs-extra "9.0.1"
+    globby "11.0.1"
+    golgoth "1.3.0"
+    inquirer "7.2.0"
+    is-glob "4.0.1"
+    json-stable-stringify "1.0.1"
+    nanoid "3.1.10"
+    ora "4.0.4"
+    shelljs "0.8.4"
+    std-mocks "1.0.1"
+    strip-ansi "6.0.0"
+    tempy "0.5.0"
+    untildify "4.0.0"
+    which "2.0.2"
 
 firost@1.2.1:
   version "1.2.1"
@@ -5595,28 +5507,6 @@ firost@1.2.1:
     globby "10.0.2"
     golgoth "1.1.1"
     inquirer "7.0.4"
-    is-glob "4.0.1"
-    json-stable-stringify "1.0.1"
-    nanoid "2.1.11"
-    ora "4.0.3"
-    shelljs "0.8.3"
-    which "2.0.2"
-
-firost@1.5.0:
-  version "1.5.0"
-  resolved "https://registry.npmjs.org/firost/-/firost-1.5.0.tgz#82b5000b6779a6fc684c9346b5e14f8742e79c0b"
-  integrity sha512-bNsGRJFRdC8EgYmZM7nw4+8B7zoWEfLi/evkOCl2B30aC9kIbbHgxj9Pq2Rdo1vSkA1SZWPJ2WQEcBDfEfOJhw==
-  dependencies:
-    callsite "1.0.0"
-    chokidar "3.3.1"
-    clear-module "4.1.1"
-    esm "3.2.25"
-    eventemitter2 "6.2.1"
-    execa "4.0.0"
-    fs-extra "8.1.0"
-    globby "11.0.0"
-    golgoth "1.1.1"
-    inquirer "7.1.0"
     is-glob "4.0.1"
     json-stable-stringify "1.0.1"
     nanoid "2.1.11"
@@ -5642,30 +5532,6 @@ firost@1.7.2:
     json-stable-stringify "1.0.1"
     nanoid "3.1.10"
     ora "4.0.4"
-    shelljs "0.8.4"
-    tempy "0.5.0"
-    untildify "4.0.0"
-    which "2.0.2"
-
-firost@1.8.2:
-  version "1.8.2"
-  resolved "https://registry.npmjs.org/firost/-/firost-1.8.2.tgz#233320171c5bb7d9acff8a2c7cff07170eafd6b1"
-  integrity sha512-8PunWdkr5oDhqL4u37rQENC1iIWrCMvIFjIy1PyPyzygrawgGCQ/l8CXC7JM29vRCyf5byEJpar82lD6I+njSw==
-  dependencies:
-    callsites "3.1.0"
-    chokidar "3.4.0"
-    clear-module "4.1.1"
-    eventemitter2 "6.4.3"
-    execa "4.0.2"
-    fs-extra "9.0.1"
-    globby "11.0.1"
-    golgoth "1.3.0"
-    inquirer "7.2.0"
-    is-glob "4.0.1"
-    json-stable-stringify "1.0.1"
-    nanoid "3.1.10"
-    ora "4.0.4"
-    pkg-dir "4.2.0"
     shelljs "0.8.4"
     tempy "0.5.0"
     untildify "4.0.0"
@@ -6119,18 +5985,6 @@ globby@10.0.2, globby@^10.0.1:
     merge2 "^1.2.3"
     slash "^3.0.0"
 
-globby@11.0.0:
-  version "11.0.0"
-  resolved "https://registry.npmjs.org/globby/-/globby-11.0.0.tgz#56fd0e9f0d4f8fb0c456f1ab0dee96e1380bc154"
-  integrity sha512-iuehFnR3xu5wBBtm4xi0dMe92Ob87ufyu/dHwpDYfbcpYpIbrO5OnS8M1vWvrBhSGEJ3/Ecj7gnX76P8YxpPEg==
-  dependencies:
-    array-union "^2.1.0"
-    dir-glob "^3.0.1"
-    fast-glob "^3.1.1"
-    ignore "^5.1.4"
-    merge2 "^1.3.0"
-    slash "^3.0.0"
-
 globby@11.0.1, globby@^11.0.1:
   version "11.0.1"
   resolved "https://registry.npmjs.org/globby/-/globby-11.0.1.tgz#9a2bf107a068f3ffeabc49ad702c79ede8cfd357"
@@ -6191,25 +6045,6 @@ golgoth@1.1.1:
     query-string "6.11.0"
     time-span "3.1.0"
 
-golgoth@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.npmjs.org/golgoth/-/golgoth-1.2.0.tgz#b92ebb3ebe2e6f4bb73733c9e1cc816ee9acc97e"
-  integrity sha512-A4EUJDfxSp8bdtnzAbcYy303EECc717I1UrCx7V3eB4pPkPV0ZXSF7RhNC67in0saNwbqFmKKuTSe1Qw34fdig==
-  dependencies:
-    chalk "3.0.0"
-    dayjs "1.8.23"
-    esm "3.2.25"
-    flat "5.0.0"
-    got "10.7.0"
-    lodash "4.17.15"
-    p-all "2.1.0"
-    p-map "3.0.0"
-    p-map-series "2.1.0"
-    p-props "3.1.0"
-    pify "5.0.0"
-    query-string "6.11.1"
-    time-span "3.1.0"
-
 golgoth@1.3.0:
   version "1.3.0"
   resolved "https://registry.npmjs.org/golgoth/-/golgoth-1.3.0.tgz#10b5c3b02c702ec7c851e33fd4e0de9799524de3"
@@ -6251,27 +6086,6 @@ got@10.5.7:
     get-stream "^5.0.0"
     lowercase-keys "^2.0.0"
     mimic-response "^2.0.0"
-    p-cancelable "^2.0.0"
-    p-event "^4.0.0"
-    responselike "^2.0.0"
-    to-readable-stream "^2.0.0"
-    type-fest "^0.10.0"
-
-got@10.7.0:
-  version "10.7.0"
-  resolved "https://registry.npmjs.org/got/-/got-10.7.0.tgz#62889dbcd6cca32cd6a154cc2d0c6895121d091f"
-  integrity sha512-aWTDeNw9g+XqEZNcTjMMZSy7B7yE9toWOFYip7ofFTLleJhvZwUxxTxkTpKvF+p1SAA4VHmuEy7PiHTHyq8tJg==
-  dependencies:
-    "@sindresorhus/is" "^2.0.0"
-    "@szmarczak/http-timer" "^4.0.0"
-    "@types/cacheable-request" "^6.0.1"
-    cacheable-lookup "^2.0.0"
-    cacheable-request "^7.0.1"
-    decompress-response "^5.0.0"
-    duplexer3 "^0.1.4"
-    get-stream "^5.0.0"
-    lowercase-keys "^2.0.0"
-    mimic-response "^2.1.0"
     p-cancelable "^2.0.0"
     p-event "^4.0.0"
     responselike "^2.0.0"
@@ -6889,25 +6703,6 @@ inquirer@7.0.4:
     strip-ansi "^5.1.0"
     through "^2.3.6"
 
-inquirer@7.1.0, inquirer@^7.0.0:
-  version "7.1.0"
-  resolved "https://registry.npmjs.org/inquirer/-/inquirer-7.1.0.tgz#1298a01859883e17c7264b82870ae1034f92dd29"
-  integrity sha512-5fJMWEmikSYu0nv/flMc475MhGbB7TSPd/2IpFV4I4rMklboCH2rQjYY5kKiYGHqUF9gvaambupcJFFG9dvReg==
-  dependencies:
-    ansi-escapes "^4.2.1"
-    chalk "^3.0.0"
-    cli-cursor "^3.1.0"
-    cli-width "^2.0.0"
-    external-editor "^3.0.3"
-    figures "^3.0.0"
-    lodash "^4.17.15"
-    mute-stream "0.0.8"
-    run-async "^2.4.0"
-    rxjs "^6.5.3"
-    string-width "^4.1.0"
-    strip-ansi "^6.0.0"
-    through "^2.3.6"
-
 inquirer@7.2.0:
   version "7.2.0"
   resolved "https://registry.npmjs.org/inquirer/-/inquirer-7.2.0.tgz#63ce99d823090de7eb420e4bb05e6f3449aa389a"
@@ -6944,6 +6739,25 @@ inquirer@^6.2.1, inquirer@^6.5.1:
     rxjs "^6.4.0"
     string-width "^2.1.0"
     strip-ansi "^5.1.0"
+    through "^2.3.6"
+
+inquirer@^7.0.0:
+  version "7.1.0"
+  resolved "https://registry.npmjs.org/inquirer/-/inquirer-7.1.0.tgz#1298a01859883e17c7264b82870ae1034f92dd29"
+  integrity sha512-5fJMWEmikSYu0nv/flMc475MhGbB7TSPd/2IpFV4I4rMklboCH2rQjYY5kKiYGHqUF9gvaambupcJFFG9dvReg==
+  dependencies:
+    ansi-escapes "^4.2.1"
+    chalk "^3.0.0"
+    cli-cursor "^3.1.0"
+    cli-width "^2.0.0"
+    external-editor "^3.0.3"
+    figures "^3.0.0"
+    lodash "^4.17.15"
+    mute-stream "0.0.8"
+    run-async "^2.4.0"
+    rxjs "^6.5.3"
+    string-width "^4.1.0"
+    strip-ansi "^6.0.0"
     through "^2.3.6"
 
 instantsearch.js@4.7.0:
@@ -8850,10 +8664,10 @@ markdown-escapes@^1.0.0:
   resolved "https://registry.npmjs.org/markdown-escapes/-/markdown-escapes-1.0.4.tgz#c95415ef451499d7602b91095f3c8e8975f78535"
   integrity sha512-8z4efJYk43E0upd0NbVXwgSTQs6cT3T06etieCMEg7dRbzCbxUCK/GHlX8mhHRDcp+OLlHkPKsvqQTCvsRl2cg==
 
-markdown-it-highlightjs@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.npmjs.org/markdown-it-highlightjs/-/markdown-it-highlightjs-3.1.0.tgz#1f4083270637bbecde26babbc9b7f333306e3010"
-  integrity sha512-SYy8fXlZ7Bk+Q+bc9JmHHcMCUFsKR3nr1JjkpPnq0gsmLOyIaxJfRoIAVqWF/AIuN7CZlJWQuSFwQoBb6dZmnQ==
+markdown-it-highlightjs@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-highlightjs/-/markdown-it-highlightjs-3.2.0.tgz#20a31fc64b1b4f02ea692f877b1dd71f63168814"
+  integrity sha512-QaSD7zCjAuB1Qa6GLfxcv7uB7svTvXGAiJ2LJShQRaJIWEjkQUAIDv+vsANe4F5J2lPJuOdXf7oIRXe0JFJg2g==
   dependencies:
     highlight.js "^9.18.1"
     lodash.flow "^3.5.0"
@@ -9112,7 +8926,7 @@ mimic-response@^1.0.0, mimic-response@^1.0.1:
   resolved "https://registry.npmjs.org/mimic-response/-/mimic-response-1.0.1.tgz#4923538878eef42063cb8a3e3b0798781487ab1b"
   integrity sha512-j5EctnkH7amfV/q5Hgmoal1g2QHFJRraOtmx0JpIqkxhBhI/lJSl1nMpQ45hVarwNETOoWEimndZ4QK0RHxuxQ==
 
-mimic-response@^2.0.0, mimic-response@^2.1.0:
+mimic-response@^2.0.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/mimic-response/-/mimic-response-2.1.0.tgz#d13763d35f613d09ec37ebb30bac0469c0ee8f43"
   integrity sha512-wXqjST+SLt7R009ySCglWBCFpjUygmCIfD790/kVbiGmUgfYGuB14PiTd5DwVxSV4NcYHjzMkoj5LjQZwTQLEA==
@@ -9415,95 +9229,6 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.npmjs.org/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-cli@2.54.0:
-  version "2.54.0"
-  resolved "https://registry.npmjs.org/netlify-cli/-/netlify-cli-2.54.0.tgz#4e292033726c919d213074057095b9b0e6acc71f"
-  integrity sha512-q1u3LMLWv7H7y5RV2bYnBfkCV9xTRIpaHe8Pr+g37mXsYu6jwd6Pqhl/ybQvlZOYprmkq+UOOG7TZzDOH5YVhw==
-  dependencies:
-    "@netlify/build" "^2.0.2"
-    "@netlify/config" "^1.1.2"
-    "@netlify/zip-it-and-ship-it" "^1.2.0"
-    "@oclif/command" "^1.5.18"
-    "@oclif/config" "^1.13.2"
-    "@oclif/errors" "^1.1.2"
-    "@oclif/parser" "^3.8.4"
-    "@oclif/plugin-help" "^2.2.0"
-    "@oclif/plugin-not-found" "^1.1.4"
-    "@oclif/plugin-plugins" "^1.7.8"
-    "@octokit/rest" "^16.28.1"
-    ansi-styles "^3.2.1"
-    ascii-table "0.0.9"
-    body-parser "^1.19.0"
-    boxen "^4.1.0"
-    chalk "^2.4.2"
-    chokidar "^3.0.2"
-    ci-info "^2.0.0"
-    clean-deep "^3.0.2"
-    cli-spinners "^1.3.1"
-    cli-ux "^5.2.1"
-    concordance "^4.0.0"
-    configstore "^5.0.0"
-    cookie "^0.4.0"
-    copy-template-dir "^1.4.0"
-    debug "^4.1.1"
-    dot-prop "^5.1.0"
-    dotenv "^8.2.0"
-    envinfo "^7.3.1"
-    execa "^2.0.3"
-    express "^4.17.1"
-    express-logging "^1.1.1"
-    find-up "^3.0.0"
-    fs-extra "^8.1.0"
-    fuzzy "^0.1.3"
-    get-port "^5.1.0"
-    gh-release-fetch "^1.0.3"
-    git-repo-info "^2.1.0"
-    gitconfiglocal "^2.1.0"
-    http-proxy "^1.17.0"
-    http-proxy-middleware "^0.20.0"
-    inquirer "^6.5.1"
-    inquirer-autocomplete-prompt "^1.0.1"
-    is-docker "^1.1.0"
-    jwt-decode "^2.2.0"
-    lambda-local "^1.7.1"
-    lodash.get "^4.4.2"
-    lodash.isempty "^4.4.0"
-    lodash.isequal "^4.5.0"
-    lodash.isobject "^3.0.2"
-    lodash.merge "^4.6.2"
-    lodash.pick "^4.4.0"
-    lodash.sample "^4.2.1"
-    lodash.snakecase "^4.1.1"
-    log-symbols "^2.2.0"
-    make-dir "^3.0.0"
-    minimist "^1.2.5"
-    netlify "^4.3.1"
-    netlify-redirect-parser "^2.5.0"
-    netlify-redirector "^0.2.0"
-    node-fetch "^2.6.0"
-    npm-packlist "^1.4.4"
-    open "^6.4.0"
-    ora "^3.4.0"
-    p-wait-for "^2.0.0"
-    parse-github-url "^1.0.2"
-    parse-gitignore "^1.0.1"
-    precinct "^6.1.2"
-    prettyjson "^1.2.1"
-    random-item "^1.0.0"
-    read-pkg-up "^6.0.0"
-    require-package-name "^2.0.1"
-    resolve "^1.12.0"
-    safe-join "^0.1.3"
-    static-server "^2.2.1"
-    strip-ansi-control-characters "^2.0.0"
-    update-notifier "^2.5.0"
-    uuid "^3.3.3"
-    wait-port "^0.2.2"
-    which "^2.0.2"
-    winston "^3.2.1"
-    wrap-ansi "^6.0.0"
-    write-file-atomic "^3.0.0"
-
 netlify-cli@2.57.0:
   version "2.57.0"
   resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.57.0.tgz#01766460135c41659eb041cacc90899a30f0cb72"
@@ -9609,7 +9334,7 @@ netlify-redirector@^0.2.0:
   resolved "https://registry.npmjs.org/netlify-redirector/-/netlify-redirector-0.2.0.tgz#2037bf92520459277c9ae17f46e4df56104cd787"
   integrity sha512-5SSUu++MXvE/tik90Hx7lzISBHCl5k4TqpVeTuBEoHp5K7uWitY7c3MjPNiY3kB83GSZiTNLbuIY7bo6mpyU3Q==
 
-netlify@4.3.5, netlify@^4.3.1, netlify@^4.3.3, netlify@^4.3.4, netlify@^4.3.5:
+netlify@4.3.5, netlify@^4.3.5:
   version "4.3.5"
   resolved "https://registry.npmjs.org/netlify/-/netlify-4.3.5.tgz#a386d0c5a23765362765057a8138cd2441a06c42"
   integrity sha512-Weq2swCfaB3pvQjVrnZmYoTwB8MdkKg/hGRRmHQWWtdh9llBKXf7UsWiIjkmDOD78xMXN9Xym6Vgi2shN+3SzQ==
@@ -9852,87 +9577,87 @@ normalize.css@^8.0.1:
   resolved "https://registry.npmjs.org/normalize.css/-/normalize.css-8.0.1.tgz#9b98a208738b9cc2634caacbc42d131c97487bf3"
   integrity sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==
 
-norska-assets@^0.13.0:
-  version "0.13.0"
-  resolved "https://registry.npmjs.org/norska-assets/-/norska-assets-0.13.0.tgz#608dbc5b23cd11e1d8eea9f59238c94171182759"
-  integrity sha512-OelK4OrasWaML57noreuCQW9DnNwkZeZUXz/MA+pjfQNhsKDAiDKiIGvx/928op7Hy8hWIb3RQ6584ixH4wGpw==
+norska-assets@^0.13.6:
+  version "0.13.6"
+  resolved "https://registry.yarnpkg.com/norska-assets/-/norska-assets-0.13.6.tgz#a54f88a959fa20fe0fd02fd2de9f87057c960323"
+  integrity sha512-Ad46bbowsjL+JJ0JLwZ3i0hdrf/Uwfh8uSHyhd6l3NG4AKXtT4PAULxEKHgu3smtLIUUs3CZHuGTVdrhlzz+Pg==
   dependencies:
-    firost "1.8.2"
+    firost "1.10.1"
     golgoth "1.3.0"
-    norska-config "^0.13.0"
+    norska-config "^0.13.6"
 
-norska-cloudinary@^0.13.0:
-  version "0.13.0"
-  resolved "https://registry.npmjs.org/norska-cloudinary/-/norska-cloudinary-0.13.0.tgz#604a835264ce15c0b312611ea71d2722c5044e33"
-  integrity sha512-5WAJBLCtqRkp7FuliPAMrowSjHe2ZCjQXZk57o/lpoOeP8ga/wxdVJe9P1Y5ZIBQcPgRDx+wgfqDXhnJFY2qKg==
+norska-cloudinary@^0.13.6:
+  version "0.13.6"
+  resolved "https://registry.yarnpkg.com/norska-cloudinary/-/norska-cloudinary-0.13.6.tgz#3310eeb76021db777f0089441dc0ca93dcd72172"
+  integrity sha512-JUObY1Ozz6t00QzVnXW9l+PbVT3olMW2TyXg2DazUbwGXdoU31FRuTOe6wVwpGlWrlGLO81/k8k5EAV5YpsO3w==
   dependencies:
-    norska-config "^0.13.0"
+    norska-config "^0.13.6"
     norska-helper "^0.13.0"
 
-norska-cms@^0.13.0:
-  version "0.13.0"
-  resolved "https://registry.npmjs.org/norska-cms/-/norska-cms-0.13.0.tgz#e5a0b05d9d16b647b04e77e2e768c462c169a643"
-  integrity sha512-fJQqRCjCNxzK3YJysbZ+164ab9GdxUVHQjuP+xJeWTIgfFKjK+6H3n69VLbDFqeuIWR7kp1AnrnEuOr6uP6eOg==
+norska-cms@^0.13.6:
+  version "0.13.6"
+  resolved "https://registry.yarnpkg.com/norska-cms/-/norska-cms-0.13.6.tgz#530d24b618bd70f6d6cc7a910bd953c306bf5f35"
+  integrity sha512-foPZhMGe/hZMjFPjhGxlw0PoV9hsAh5qlA/Qw3S6pwlAKh92/MLHSfPTPFHWp3JTsEEP82wJp+g0+vyaWy3A2w==
   dependencies:
     connect-livereload "0.6.1"
     express "4.17.1"
-    firost "1.8.2"
+    firost "1.10.1"
     golgoth "1.3.0"
     livereload "0.9.1"
     multer "1.4.2"
     nodemon "2.0.4"
-    norska-config "^0.13.0"
-    norska-css "^0.13.0"
+    norska-config "^0.13.6"
+    norska-css "^0.13.6"
     norska-helper "^0.13.0"
     open "7.0.4"
 
-norska-config@^0.13.0:
-  version "0.13.0"
-  resolved "https://registry.npmjs.org/norska-config/-/norska-config-0.13.0.tgz#b5b1eb18988231a21c00b0efb3c048a045aa450d"
-  integrity sha512-zYRAiNDcEVH3Y6BKahYgDrZaX2WGKa96pj28fN1ZGonktPQi2EDqkl1ojO6EzYhvpTlqzQnB/ghQYx1VMWPv5w==
+norska-config@^0.13.6:
+  version "0.13.6"
+  resolved "https://registry.yarnpkg.com/norska-config/-/norska-config-0.13.6.tgz#3d6a0537618e3f79806a984dbf0113bafd5dac14"
+  integrity sha512-BacInqS1j4cSanp0GfOV3E5eRKdQuCjVmlsulj/euQK6tqiVQwYeaPpM5SvH6ttwKIo5QzVzwk4IAVMNSPRJ9w==
   dependencies:
-    firost "1.8.2"
+    firost "1.10.1"
     golgoth "1.3.0"
     norska-helper "^0.13.0"
 
-norska-css@^0.13.0:
-  version "0.13.0"
-  resolved "https://registry.npmjs.org/norska-css/-/norska-css-0.13.0.tgz#c6657cbbacacd2503d25ff261bf5937f5d45940c"
-  integrity sha512-qQ7UsHzpqwXVWYzVACWTH0PqmiM7nzdAHvlfgrzfiaxxs2aKjvIh8auTcT3IrEWVVcJSsVag+fX9LJmceqtUwg==
+norska-css@^0.13.6:
+  version "0.13.6"
+  resolved "https://registry.yarnpkg.com/norska-css/-/norska-css-0.13.6.tgz#d92e63bf9ddb4b734c7bd22a8daa7371390f75ab"
+  integrity sha512-54bS/uJSdcFMORVffZySEtmZ4f1/VBcLjDRbjEwlcJtvs1oP8Pyd51XCssl+cy/lN0ZfwVKLf9eq2g1JVaqg4w==
   dependencies:
     "@fullhuman/postcss-purgecss" "1.3.0"
     autoprefixer "9.8.4"
-    firost "1.8.2"
+    firost "1.10.1"
     golgoth "1.3.0"
-    norska-config "^0.13.0"
+    norska-config "^0.13.6"
     norska-helper "^0.13.0"
     postcss "7.0.32"
     postcss-clean "1.1.0"
     postcss-import "12.0.1"
     postcss-nested "4.2.1"
     purge-from-html "1.0.3"
-    tailwind-config-norska "0.2.1"
+    tailwind-config-norska "0.2.3"
     tailwindcss "1.4.6"
 
-norska-data@^0.13.0:
-  version "0.13.0"
-  resolved "https://registry.npmjs.org/norska-data/-/norska-data-0.13.0.tgz#a00c6faac5f2bfd3e63787dcdcdcd1eee3247267"
-  integrity sha512-U3t2OyZ4gxYafwRZtm2SnGC9yLYBShuLJhRcPzFWtFdV0t6H3Nxw8WVLtMbyBRJvs+orEvXKtsmGkA11GlqIUA==
+norska-data@^0.13.6:
+  version "0.13.6"
+  resolved "https://registry.yarnpkg.com/norska-data/-/norska-data-0.13.6.tgz#7201928fbd0788ae2239fb4fdbd937f6d63198b4"
+  integrity sha512-Wpg8PCdtTEb5HZMjGyt4Qv78ER03nlSAwaRTyIQ/tad3c4pzNR9eo94WXqBfh1FadwowUe3HhudfEUnhHkr/UQ==
   dependencies:
-    firost "1.8.2"
+    firost "1.10.1"
     golgoth "1.3.0"
-    norska-config "^0.13.0"
+    norska-config "^0.13.6"
 
-norska-frontend@^0.13.0:
-  version "0.13.0"
-  resolved "https://registry.npmjs.org/norska-frontend/-/norska-frontend-0.13.0.tgz#20904ad2bd98f60c765ce931d85a5d0ce4f31ddc"
-  integrity sha512-JFv4+8dYlIKnfJ7bzebdqDF4fAIXIRCgIcBbxZm7PfvNe2Zg/0HJsJD9SJYuvP8TRFGxqtZnoM/FD/nLEn4uBg==
+norska-frontend@^0.13.6:
+  version "0.13.6"
+  resolved "https://registry.yarnpkg.com/norska-frontend/-/norska-frontend-0.13.6.tgz#9bee2ae628ee402ea95afe0c4a3022bd3b33b1b8"
+  integrity sha512-yoJdFlXl77cSZvFp1MCSnv8E/jrrud+dv7e4iovcoj0ZlDeRdOEiwPPStH6qd9cw/rrvyvpvdjmWZqrseVuhpA==
   dependencies:
     algoliasearch "4.3.0"
     instantsearch.js "4.7.0"
     lazysizes "5.2.2"
     lodash-es "4.17.15"
-    norska-cloudinary "^0.13.0"
+    norska-cloudinary "^0.13.6"
 
 norska-helper@^0.13.0:
   version "0.13.0"
@@ -9941,92 +9666,92 @@ norska-helper@^0.13.0:
   dependencies:
     golgoth "1.3.0"
 
-norska-html@^0.13.0:
-  version "0.13.0"
-  resolved "https://registry.npmjs.org/norska-html/-/norska-html-0.13.0.tgz#f4884caff864f4af40b3cfbd5b44f3b0c728ce61"
-  integrity sha512-NbYHMyzb/OLscANEtrTv9dcbtgYCjVsk6qRPsUbDsV6SwkdMJCIFHOQo0fMBt3qOPmXfwJXj/mLxWpoab/gCvg==
+norska-html@^0.13.6:
+  version "0.13.6"
+  resolved "https://registry.yarnpkg.com/norska-html/-/norska-html-0.13.6.tgz#259ea1e78ac9a9e993f30e47f173cd9384630e07"
+  integrity sha512-jONc3x8MmMIatwPj97lS3+gEDnwCnjKeqQ/ncksukjA3m2FPNjilFmZYN8PxQKCLIfIeKoAk034xrKP0kBcTQg==
   dependencies:
     ensure-url-trailing-slash "0.1.4"
-    firost "1.8.2"
+    firost "1.10.1"
     golgoth "1.3.0"
     highlightjs-pug "0.0.2"
     markdown-it "11.0.0"
-    markdown-it-highlightjs "3.1.0"
-    norska-cloudinary "^0.13.0"
-    norska-config "^0.13.0"
-    norska-data "^0.13.0"
-    norska-frontend "^0.13.0"
+    markdown-it-highlightjs "3.2.0"
+    norska-cloudinary "^0.13.6"
+    norska-config "^0.13.6"
+    norska-data "^0.13.6"
+    norska-frontend "^0.13.6"
     norska-helper "^0.13.0"
-    norska-revv "^0.13.0"
+    norska-revv "^0.13.6"
     pug "3.0.0"
 
-norska-init@^0.13.3:
-  version "0.13.3"
-  resolved "https://registry.npmjs.org/norska-init/-/norska-init-0.13.3.tgz#8ab6c864a4d4210e9715d125a2b5a0417c3acac2"
-  integrity sha512-Dl8iIx+Uug0xQ38y4YT673cgTtZqThbF88w6+1iUoMc9n937p91SSuQTGsgyaD7ans2eMO9tDcaflS0Ykaiwhg==
+norska-init@^0.13.6:
+  version "0.13.6"
+  resolved "https://registry.yarnpkg.com/norska-init/-/norska-init-0.13.6.tgz#40a662bfdf8e86dcda112bbb0e143acbb70b6ca0"
+  integrity sha512-JmQeXQl0drNj/u2JWi4jQekQJZdhlmfDoGgOAZeWb/xpFLPTHU8YmOp0d4++UTo5v0osaIMJyurzxPOXgiiRcA==
   dependencies:
-    firost "1.8.2"
+    firost "1.10.1"
     golgoth "1.3.0"
-    norska-config "^0.13.0"
-    norska-netlify "^0.13.3"
+    norska-config "^0.13.6"
+    norska-netlify "^0.13.6"
 
-norska-js@^0.13.0:
-  version "0.13.0"
-  resolved "https://registry.npmjs.org/norska-js/-/norska-js-0.13.0.tgz#988701ff8680ee11abfb5cb0213b2a0156ce3bab"
-  integrity sha512-sGJhYM0xMdF+FbPtwgZ20PyhzX+FSgAlpK7cd297UElujBXkskfvqx6lrCcpOKIbCPC6+nDFj+BztXTeUTKDKw==
+norska-js@^0.13.6:
+  version "0.13.6"
+  resolved "https://registry.yarnpkg.com/norska-js/-/norska-js-0.13.6.tgz#513a3f1fc2dcd0b49aef690be293386c8b0f2d00"
+  integrity sha512-lD1Bb91jXQ2YASiydRZhKpSA9Q1MhuU1KkiUoYwhShijfx/DuDttoCtXv8VfpUV22zAeFYPrrHXy+j7w7Ln6JQ==
   dependencies:
-    firost "1.8.2"
+    firost "1.10.1"
     golgoth "1.3.0"
-    norska-config "^0.13.0"
+    norska-config "^0.13.6"
     norska-helper "^0.13.0"
     pug-loader "^2.4.0"
     webpack "4.43.0"
 
-norska-netlify@^0.13.3:
-  version "0.13.3"
-  resolved "https://registry.npmjs.org/norska-netlify/-/norska-netlify-0.13.3.tgz#9d81133bf8f5cdbe4d424c9586df2f0465370f2b"
-  integrity sha512-YaCGIYcTqaWDbF7R0mqLPlSbyaXGa7bwi1rcjiHWlDtrNA9tQCzKDVMwHIG1jlMQjQu/Yv6Hs6A2QdMjbJsnZA==
+norska-netlify@^0.13.6:
+  version "0.13.6"
+  resolved "https://registry.yarnpkg.com/norska-netlify/-/norska-netlify-0.13.6.tgz#5d6da4530670197f47cee93c080b7f841fdc77b1"
+  integrity sha512-bAUNw2eGT9uevC3lavUOFkl4ohyhO53gu0htFZs2nPULezT/WM5QPa+YOQUDIBHKEmlJ3eeUJpQ/KDL0YJzgiw==
   dependencies:
-    firost "1.8.2"
+    firost "1.10.1"
     golgoth "1.3.0"
     multimatch "4.0.0"
     netlify "4.3.5"
-    netlify-cli "2.54.0"
-    norska-config "^0.13.0"
+    netlify-cli "2.57.0"
+    norska-config "^0.13.6"
     norska-helper "^0.13.0"
 
-norska-revv@^0.13.0:
-  version "0.13.0"
-  resolved "https://registry.npmjs.org/norska-revv/-/norska-revv-0.13.0.tgz#c4bd592e8641af1d18afc74a1278d78a689fce65"
-  integrity sha512-+/z0SEE68b7AZuzfsNV+6DXCM5gtxozVr5Ddx7MiiHfau+S9WmK0yXPe7nhijCioEuh/x+MVd2nVCjRbbrdOHQ==
+norska-revv@^0.13.6:
+  version "0.13.6"
+  resolved "https://registry.yarnpkg.com/norska-revv/-/norska-revv-0.13.6.tgz#0ed3f70a1c08c4a08e0c242dff95f7ab5d2ada12"
+  integrity sha512-eXx3IrWA0xF+I6RZi7kTTQEHxAkRFkB5wQlvskpFlyzSB5jNIfBW8VAtd9zAH64bMBSJYTJAxOEeOPG9Oniy7A==
   dependencies:
-    firost "1.8.2"
+    firost "1.10.1"
     golgoth "1.3.0"
-    norska-config "^0.13.0"
+    norska-config "^0.13.6"
     norska-helper "^0.13.0"
     rev-hash "^3.0.0"
 
-norska@0.13.3:
-  version "0.13.3"
-  resolved "https://registry.npmjs.org/norska/-/norska-0.13.3.tgz#199ea65944b9d78c6c216a4344f27d84b2248d7d"
-  integrity sha512-euQAQben3IC/0s5wTH0p8Gz2yKwEDnR+Zfj+Li3XmYM2pOhqgAFBLLXDJ8TzLB1oYy8ZhbmgXcfp8VYL4/1iqQ==
+norska@0.13.6:
+  version "0.13.6"
+  resolved "https://registry.yarnpkg.com/norska/-/norska-0.13.6.tgz#c1db3e7a689db7ae2bed8237a6cc1953589b7d70"
+  integrity sha512-D8VfRXq5WJO8Fd7uL6Wj/65jXbyf135I3xE0k76SmTvwSfp+62zGhdKj8DyDrAiUHSBNTYCbpFJFkB1b859iUQ==
   dependencies:
-    firost "1.8.2"
+    firost "1.10.1"
     golgoth "1.3.0"
     live-server "1.2.1"
     minimist "1.2.5"
-    norska-assets "^0.13.0"
-    norska-cloudinary "^0.13.0"
-    norska-cms "^0.13.0"
-    norska-config "^0.13.0"
-    norska-css "^0.13.0"
-    norska-frontend "^0.13.0"
+    norska-assets "^0.13.6"
+    norska-cloudinary "^0.13.6"
+    norska-cms "^0.13.6"
+    norska-config "^0.13.6"
+    norska-css "^0.13.6"
+    norska-frontend "^0.13.6"
     norska-helper "^0.13.0"
-    norska-html "^0.13.0"
-    norska-init "^0.13.3"
-    norska-js "^0.13.0"
-    norska-netlify "^0.13.3"
-    norska-revv "^0.13.0"
+    norska-html "^0.13.6"
+    norska-init "^0.13.6"
+    norska-js "^0.13.6"
+    norska-netlify "^0.13.6"
+    norska-revv "^0.13.6"
 
 np@pixelastic/np#feat/no-2fa:
   version "6.2.0"
@@ -10552,13 +10277,6 @@ p-memoize@^3.1.0:
     mem "^4.3.0"
     mimic-fn "^2.1.0"
 
-p-props@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.npmjs.org/p-props/-/p-props-3.1.0.tgz#9c4559386df4584bfa7af8209ae7286e55aa0d2f"
-  integrity sha512-N9mPfJfnApIlyCmF6H2KKccOsW9a1um2aIZWh/dU6flpJ5uU3fYDPVYfjOPLTbLVnUn+lcTqtlxxCVylM3mYsw==
-  dependencies:
-    p-map "^3.0.0"
-
 p-props@4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/p-props/-/p-props-4.0.0.tgz#f37c877a9a722057833e1dc38d43edf3906b3437"
@@ -10888,19 +10606,19 @@ pirates@^4.0.1:
   dependencies:
     node-modules-regexp "^1.0.0"
 
-pkg-dir@4.2.0, pkg-dir@^4.1.0, pkg-dir@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.npmjs.org/pkg-dir/-/pkg-dir-4.2.0.tgz#f099133df7ede422e81d1d8448270eeb3e4261f3"
-  integrity sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==
-  dependencies:
-    find-up "^4.0.0"
-
 pkg-dir@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/pkg-dir/-/pkg-dir-3.0.0.tgz#2749020f239ed990881b1f71210d51eb6523bea3"
   integrity sha512-/E57AYkoeQ25qkxMj5PBOVgF8Kiu/h7cYS30Z5+R7WaiCCBfLq58ZI/dSeaEKb9WVJV5n/03QwrN3IeWIFllvw==
   dependencies:
     find-up "^3.0.0"
+
+pkg-dir@^4.1.0, pkg-dir@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.npmjs.org/pkg-dir/-/pkg-dir-4.2.0.tgz#f099133df7ede422e81d1d8448270eeb3e4261f3"
+  integrity sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==
+  dependencies:
+    find-up "^4.0.0"
 
 pkg-up@^2.0.0:
   version "2.0.0"
@@ -11528,15 +11246,6 @@ query-string@6.11.0:
   version "6.11.0"
   resolved "https://registry.npmjs.org/query-string/-/query-string-6.11.0.tgz#dc27a05733d1be66f16d0f83dfa957270f45f66d"
   integrity sha512-jS+me8X3OEGFTsF6kF+vUUMFG/d3WUCvD7bHhfZP5784nOq1pjj8yau/u86nfOncmcN6ZkSWKWkKAvv/MGxzLA==
-  dependencies:
-    decode-uri-component "^0.2.0"
-    split-on-first "^1.0.0"
-    strict-uri-encode "^2.0.0"
-
-query-string@6.11.1:
-  version "6.11.1"
-  resolved "https://registry.npmjs.org/query-string/-/query-string-6.11.1.tgz#ab021f275d463ce1b61e88f0ce6988b3e8fe7c2c"
-  integrity sha512-1ZvJOUl8ifkkBxu2ByVM/8GijMIPx+cef7u3yroO3Ogm4DOdZcF5dcrWTIlSHe3Pg/mtlt6/eFjObDfJureZZA==
   dependencies:
     decode-uri-component "^0.2.0"
     split-on-first "^1.0.0"
@@ -13188,12 +12897,12 @@ table@^5.2.3, table@^5.4.6:
     slice-ansi "^2.1.0"
     string-width "^3.0.0"
 
-tailwind-config-norska@0.2.1:
-  version "0.2.1"
-  resolved "https://registry.npmjs.org/tailwind-config-norska/-/tailwind-config-norska-0.2.1.tgz#d4f5ecd9394eea233a3fc8387189928b5113d7d0"
-  integrity sha512-919joj1ih2gtv+uZcgqpe9kqf6saEoaaZGZ2wdii2k74sBWYfTIY9ZdAQh76ABgJT4aEoqPveI1FhJAEtFzQzQ==
+tailwind-config-norska@0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/tailwind-config-norska/-/tailwind-config-norska-0.2.3.tgz#1329c143e2c66dd0df22f6c7b780e3f19a820b2f"
+  integrity sha512-BKe0rubsHNh2CHqGdmjd/X+smJN6velEq1PfuK6fZ6H+TfD0hvVV1TfY3H/Z80jZhFXvqtFHqQR3kOLn/eYC8Q==
   dependencies:
-    golgoth "1.2.0"
+    golgoth "1.3.0"
     hex-rgb "4.1.0"
 
 tailwindcss@1.4.6:
