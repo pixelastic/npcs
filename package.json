@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "ky": "0.20.0",
-    "norska": "0.13.8",
+    "norska": "0.13.9",
     "p-map": "4.0.0"
   },
   "devDependencies": {
