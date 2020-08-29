@@ -1,7 +1,7 @@
 const helper = require('../lib/main.js');
 const pMap = require('golgoth/lib/pMap');
 const _ = require('golgoth/lib/lodash');
-const sleep = require('firost/lib/sleep');
+const sleep = require('firost/sleep');
 
 (async function () {
   const max = 9;

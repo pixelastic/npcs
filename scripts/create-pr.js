@@ -1,7 +1,7 @@
 const { Octokit } = require('@octokit/core');
 const createPullRequest = require('octokit-create-pull-request');
 const fs = require('fs');
-const uuid = require('firost/lib/uuid');
+const uuid = require('firost/uuid');
 
 const MyOctokit = Octokit.plugin(createPullRequest);
 

@@ -1,4 +1,4 @@
-const glob = require('firost/lib/glob');
+const glob = require('firost/glob');
 const _ = require('golgoth/lib/lodash');
 const path = require('path');
 
