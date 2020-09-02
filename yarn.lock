@@ -9836,10 +9836,10 @@ netlify-cli@2.59.0:
     wrap-ansi "^6.0.0"
     write-file-atomic "^3.0.0"
 
-netlify-cli@2.60.0:
-  version "2.60.0"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.60.0.tgz#6429fd79d84720190e4fbcc598fb35372c3311bc"
-  integrity sha512-50ls6Ac9QIkrqO6jiarqe4xET3oHLDMK5UBmOS7LFQnxQ4W/V5H7hzm8ZJ6tQGnm8cZoD7bhzQTkz1rnG3CTJA==
+netlify-cli@2.60.1:
+  version "2.60.1"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.60.1.tgz#72342619829754ba65ef258fd2c24cd96cff2a49"
+  integrity sha512-oh+X4uUASpjUqBUSQm24xdLb9NAMiix6QemKy8esQWFZZvENnZblq9ZvCxkcIkoVxkgAqT8BnTOfcHT+OdfzJw==
   dependencies:
     "@netlify/build" "^3.1.10"
     "@netlify/config" "^2.0.9"
