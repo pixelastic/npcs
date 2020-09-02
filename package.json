@@ -13,7 +13,7 @@
     "firost": "2.0.5",
     "form-data": "3.0.0",
     "golgoth": "1.4.0",
-    "netlify-cli": "2.59.3",
+    "netlify-cli": "2.60.0",
     "octokit-create-pull-request": "1.5.0",
     "rev-hash": "3.0.0",
     "sharp": "0.26.0"
