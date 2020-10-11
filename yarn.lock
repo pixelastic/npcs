@@ -11265,10 +11265,10 @@ netlify-cli@2.59.0:
     wrap-ansi "^6.0.0"
     write-file-atomic "^3.0.0"
 
-netlify-cli@2.65.4:
-  version "2.65.4"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.65.4.tgz#16486965a6187ab893f743ff990386fcf8f46036"
-  integrity sha512-Ybm7WNeBB0NyYspEdlUxt+GZ2uq0Zn4QSyvpQBDJvNCLDZEpyr04HJYbKI/QjUQJvjK4zFi9//l5+Fs4WlM9jw==
+netlify-cli@2.65.5:
+  version "2.65.5"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.65.5.tgz#b9ba7bd3d6fbd6113d5d5d99ad3f9c01a4ce7624"
+  integrity sha512-tW0EPmMZfdZ26DFDNbHbpqjYmmGxw8tR8TBsVsI7EqQS+QsvcVBNzgQeQGKLBd53Tp4pDPg481dHknb0c/XL9Q==
   dependencies:
     "@netlify/build" "^5.0.0"
     "@netlify/config" "^2.0.9"
@@ -11298,6 +11298,7 @@ netlify-cli@2.65.4:
     cookie "^0.4.0"
     copy-template-dir "^1.4.0"
     debug "^4.1.1"
+    del "^5.1.0"
     dot-prop "^5.1.0"
     dotenv "^8.2.0"
     envinfo "^7.3.1"
@@ -11306,7 +11307,6 @@ netlify-cli@2.65.4:
     express-logging "^1.1.1"
     filter-obj "^2.0.1"
     find-up "^4.1.0"
-    fs-extra "^8.1.0"
     fuzzy "^0.1.3"
     get-port "^5.1.0"
     gh-release-fetch "^1.0.3"
