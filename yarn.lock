@@ -11443,10 +11443,10 @@ netlify-cli@2.59.0:
     wrap-ansi "^6.0.0"
     write-file-atomic "^3.0.0"
 
-netlify-cli@2.68.7:
-  version "2.68.7"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.68.7.tgz#4b8a27f5e26b16bfe26bbe6ef91feff9b89c5699"
-  integrity sha512-HbOaT0RL+AHXaeQYEiJlTC0IIYkaYgpCK8ByHrwUYCXunHW9/MWMSXs5Cg9grVMgD36qL1A5E7ljrJjWUFvwcA==
+netlify-cli@2.68.8:
+  version "2.68.8"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.68.8.tgz#36202bc14d0718ffe0ccfe7d96f6be85e1087a28"
+  integrity sha512-GJnNZNLhzqbWEwDvRm3MQ4o5P7/KCK5jdMLzqf/Uk5G+wPElWf+2y4sK5GBpaNNRCU3WVSf4jXzrqaT03yA7Jg==
   dependencies:
     "@netlify/build" "^5.0.0"
     "@netlify/config" "^2.0.9"
