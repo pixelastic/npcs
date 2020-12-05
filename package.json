@@ -6,11 +6,11 @@
   },
   "devDependencies": {
     "@octokit/core": "3.2.4",
-    "aberlaas": "1.13.3",
+    "aberlaas": "1.14.0",
     "callirhoe": "0.1.0",
     "cat-names": "3.0.0",
     "data-urls": "2.0.0",
-    "firost": "2.0.6",
+    "firost": "2.1.0",
     "form-data": "3.0.0",
     "golgoth": "1.5.0",
     "netlify-cli": "2.69.1",
